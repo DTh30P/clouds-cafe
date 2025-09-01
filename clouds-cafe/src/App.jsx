@@ -1,48 +1,38 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+// Pages
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 export default function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black/50 text-white text-center p-8">
-      {/* Title */}
-      <h1 className="text-5xl font-bold mb-4 text-pink-200 drop-shadow-lg">
-        ☁️ Clouds Café ☁️
-      </h1>
-      <p className="text-lg text-blue-200 mb-8">
-        Baby blue & pink flavors in every sip.
-      </p>
+    <Router>
+      <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-pink-50 overflow-hidden">
+        {/* Floating Clouds */}
+        <div className="absolute top-20 left-10 w-40 h-20 bg-white rounded-full opacity-60 blur-xl animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-56 h-28 bg-white rounded-full opacity-50 blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-10 left-1/3 w-48 h-24 bg-white rounded-full opacity-40 blur-xl animate-pulse"></div>
 
-      {/* Buttons */}
-      <div className="space-x-4">
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="bg-pink-300 hover:bg-pink-400 text-black px-6 py-2 rounded-2xl shadow-md hover:shadow-pink-500/50 transition-all duration-300 active:scale-95"
-        >
-          View Menu
-        </button>
-        <button
-          className="bg-blue-300 hover:bg-blue-400 text-black px-6 py-2 rounded-2xl shadow-md hover:shadow-blue-500/50 transition-all duration-300 active:scale-95"
-        >
-          Contact Us
-        </button>
+        {/* Navbar */}
+        <Navbar />
+
+        {/* Main Content */}
+        <main className="relative z-10">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <Footer />
       </div>
-
-      {/* Menu Popup */}
-      {menuOpen && (
-        <div className="mt-8 bg-white/90 text-black p-6 rounded-2xl shadow-xl w-80 animate-fadeIn">
-          <h2 className="text-2xl font-bold mb-4 text-center text-pink-500">
-            Our Menu
-          </h2>
-          <ul className="space-y-2">
-            <li>☕ Cappuccino — R30</li>
-            <li>🍵 Matcha Latte — R35</li>
-            <li>🥐 Croissant — R20</li>
-            <li>🍰 Strawberry Cake — R40</li>
-          </ul>
-        </div>
-      )}
-    </div>
+    </Router>
   );
 }
-

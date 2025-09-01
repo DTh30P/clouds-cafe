@@ -2,18 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-out;
-}
-
-
-body {
-  @apply bg-cover bg-center min-h-screen;
-  background-image: url('/cafe_picture.png');
+.btn {
+  @apply px-4 py-2 rounded-full bg-blue-300 text-white shadow-md hover:bg-pink-300 transition;
 }
 
