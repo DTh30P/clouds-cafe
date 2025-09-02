@@ -8,7 +8,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="text-2xl font-extrabold text-pink-400 flex items-center gap-2 tracking-tight">
           <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow" />
-          Clouds Café
+          nube Café
         </a>
 
         {/* Links */}
