@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <Router basename="/clouds-cafe">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-pink-50 overflow-hidden">
         {/* Floating Clouds */}
         <div className="absolute top-20 left-10 w-40 h-20 bg-white rounded-full opacity-60 blur-xl animate-pulse"></div>

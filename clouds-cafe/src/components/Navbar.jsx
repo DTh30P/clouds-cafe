@@ -1,40 +1,53 @@
-import { Link } from "react-router-dom";
+
+
+import { NavLink } from "react-router-dom";
+import { Cloud } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-md shadow-md z-50">
+    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50 border-b border-pink-100">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-pink-400">
-          ☁️ Clouds Café
-        </Link>
+        <NavLink to="/" className="text-2xl font-extrabold text-pink-400 flex items-center gap-2 tracking-tight">
+          <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow" />
+          Clouds Café
+        </NavLink>
 
         {/* Links */}
         <div className="space-x-6">
-          <Link
+          <NavLink
             to="/"
-            className="text-blue-500 hover:text-pink-400 transition font-medium"
+            className={({ isActive }) =>
+              `text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50${isActive ? ' bg-pink-100/70 shadow-md' : ''}`
+            }
+            end
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/menu"
-            className="text-blue-500 hover:text-pink-400 transition font-medium"
+            className={({ isActive }) =>
+              `text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50${isActive ? ' bg-pink-100/70 shadow-md' : ''}`
+            }
           >
             Menu
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
-            className="text-blue-500 hover:text-pink-400 transition font-medium"
+            className={({ isActive }) =>
+              `text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50${isActive ? ' bg-pink-100/70 shadow-md' : ''}`
+            }
           >
             About
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact"
-            className="text-blue-500 hover:text-pink-400 transition font-medium"
+            className={({ isActive }) =>
+              `text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50${isActive ? ' bg-pink-100/70 shadow-md' : ''}`
+            }
           >
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>

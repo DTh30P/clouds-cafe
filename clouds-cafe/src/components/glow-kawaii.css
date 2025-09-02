@@ -1,0 +1,6 @@
+/* Add this to your global CSS (e.g., index.css or Navbar.jsx style block) */
+
+.glow-kawaii {
+  box-shadow: 0 0 12px 2px #bae6fd, 0 0 24px 4px #fbcfe8;
+  transition: box-shadow 0.3s;
+}
