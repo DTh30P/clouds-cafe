@@ -1,0 +1,10 @@
+{
+  "name": "clouds-cafe-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd clouds-cafe && npm run dev",
+    "build": "cd clouds-cafe && npm run build",
+    "start": "cd clouds-cafe && npm run start"
+  }
+}
