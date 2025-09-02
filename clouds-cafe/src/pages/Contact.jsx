@@ -33,7 +33,7 @@ export default function Contact() {
         <div className="text-blue-500 text-sm flex flex-col gap-2 items-center">
           <div className="flex items-center gap-2"><Smartphone className="w-5 h-5 text-blue-300" />+1 (555) 123-4567</div>
           <div className="flex items-center gap-2"><Phone className="w-5 h-5 text-pink-300" />+1 (555) 987-6543</div>
-          <div className="flex items-center gap-2"><Mail className="w-5 h-5 text-blue-300" />cloudscafe@email.com</div>
+          <div className="flex items-center gap-2"><Mail className="w-5 h-5 text-blue-300" />nubecafe@email.com</div>
         </div>
       </div>
 
@@ -44,10 +44,10 @@ export default function Contact() {
           <span>Follow Us</span>
         </h3>
         <div className="flex justify-center gap-6">
-          <a href="https://instagram.com/cloudscafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Instagram">
+          <a href="https://instagram.com/nubecafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Instagram">
             <Instagram className="w-8 h-8 text-pink-400" />
           </a>
-          <a href="https://facebook.com/cloudscafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Facebook">
+          <a href="https://facebook.com/nubecafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Facebook">
             <Facebook className="w-8 h-8 text-blue-400" />
           </a>
         </div>
