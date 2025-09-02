@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 .btn {
-  @apply px-4 py-2 rounded-full bg-blue-300 text-white shadow-md hover:bg-pink-300 transition;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: #60a5fa; /* blue-300 */
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(99,102,241,0.08);
+  transition: background-color 200ms ease;
 }
+.btn:hover { background-color: #fb7185; /* pink-300 */ }
+
+/* Design system additions (plain CSS equivalents) */
+.container {
+  max-width: 72rem; /* approx max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.site-heading {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800;
+  color: #0f172a; /* gray-900 */
+  letter-spacing: -0.025em;
+}
+@media (min-width: 768px) {
+  .site-heading { font-size: 3rem; }
+}
+
+.muted { color: #6b7280; }
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(2,6,23,0.04);
+  padding: 1.5rem;
+  border: 1px solid #f3f4f6;
+}
+
+.nav-link {
+  color: #374151;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  transition: color 160ms ease;
+}
+.nav-link:hover { color: #ec4899; }
+
+.accent { color: #ec4899; }
 
