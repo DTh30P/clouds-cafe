@@ -1,24 +1,42 @@
-
-
 import { Cloud } from "lucide-react";
 
 export default function Navbar() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "menu", "about", "contact"];
+      const scrollPosition = window.scrollY + 100; // Offset for fixed navbar
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
+    };
+
+    // Set initial active section
+    handleScroll();
+
+    // Add scroll listener
+    window.addEventListener("scroll", handleScroll);
+    
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const getLinkClassName = (sectionId) => {
+    return `nav-link ${activeSection === sectionId ? "nav-link-active" : ""}`;
+  };
+
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50 border-b border-pink-100">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <a href="#home" className="text-2xl font-extrabold text-pink-400 flex items-center gap-2 tracking-tight">
+
           <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow" />
           nube Café
         </a>
 
-        {/* Links */}
-        <div className="space-x-6">
-          <a href="#home" className="text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50">Home</a>
-          <a href="#menu" className="text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50">Menu</a>
-          <a href="#about" className="text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50">About</a>
-          <a href="#contact" className="text-blue-400 hover:text-pink-400 transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50">Contact</a>
-        </div>
       </div>
     </nav>
   );
