@@ -34,7 +34,7 @@ export default function Navbar() {
     }`;
 
   return (
-  <nav className="w-full bg-white/90 backdrop-blur-md shadow-md z-50 border-b border-pink-100">
+  <nav className="w-full bg-transparent shadow-none border-none">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center">
         {/* Links */}
         <div className="space-x-6">
