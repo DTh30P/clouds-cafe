@@ -13,7 +13,6 @@ export default function App() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Main Content: Home is now the scrollable landing page */}
       <main className="relative z-10">
         <Home />
       </main>
