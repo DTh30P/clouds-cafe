@@ -12,7 +12,7 @@ export default function About() {
 
       <h2 className="text-4xl font-extrabold text-pink-500 mb-4 drop-shadow-kawaii flex items-center justify-center gap-2">
         <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow-md" />
-        About nube Café
+        About NUBE
       </h2>
       <p className="text-lg text-blue-500 mb-8 flex items-center justify-center gap-2">
         Where every sip feels like floating

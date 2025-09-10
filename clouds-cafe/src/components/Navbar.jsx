@@ -34,19 +34,8 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50 border-b border-pink-100">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
-        {/* Logo only (SVG) */}
-        <a href="#home" className="flex items-center">
-          <img
-            src="nube-designs/nube-logo.svg"
-            alt="nube logo"
-            className="h-12 w-auto object-contain"
-            style={{ display: 'block' }}
-          />
-        </a>
-
+  <nav className="w-full bg-white/90 backdrop-blur-md shadow-md z-50 border-b border-pink-100">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center">
         {/* Links */}
         <div className="space-x-6">
           <a href="#home" className={linkClass("home")}>Home</a>

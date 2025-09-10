@@ -106,7 +106,7 @@ export default function Home() {
         <div className="bg-white/90 rounded-3xl shadow-xl border border-pink-100 flex flex-col md:flex-row items-center gap-8 p-10 md:p-16">
           <Cloud className="w-20 h-20 text-blue-200 animate-bounce-slow mb-6 md:mb-0 md:mr-8" />
           <div className="text-center md:text-left">
-            <h2 className="text-4xl font-extrabold text-pink-400 mb-4 tracking-tight">About nube Café</h2>
+            <h2 className="text-4xl font-extrabold text-pink-400 mb-4 tracking-tight">About NUBE</h2>
             <p className="text-lg text-blue-400 font-medium mb-2">We make dreamy pastel drinks and kawaii treats — a cozy spot to float away for a while.</p>
             <p className="text-pink-400 font-semibold">Inspired by clouds, crafted with love in every cup and cake.</p>
           </div>
