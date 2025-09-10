@@ -5,7 +5,7 @@ export default function Home() {
     <div className="pt-20 text-center bg-gradient-to-b from-blue-50 via-pink-50 to-blue-100 min-h-screen">
       {/* Hero */}
   <section id="home" className="bg-gradient-to-br from-pink-100 via-blue-100 to-pink-50 py-20 rounded-3xl shadow-lg max-w-4xl mx-auto mb-12 border border-pink-100">
-        <h2 className="text-5xl font-extrabold text-pink-400 mb-2 tracking-tight">Welcome to NUBE</h2>
+        <h2 className="text-5xl font-extrabold text-pink-400 mb-2 tracking-tight">Welcome!</h2>
         <p className="mt-4 text-lg text-blue-400 font-medium">Where every sip feels like floating <span className='inline-block align-middle'><Coffee className='inline w-6 h-6 text-blue-200' /></span></p>
         <a href="#menu" className="mt-8 bg-pink-300 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-200 hover:text-pink-500 transition font-bold text-lg border-2 border-pink-200 inline-block">
           See Our Menu

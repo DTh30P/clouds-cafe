@@ -1,0 +1,9 @@
+.comic-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url('/clouds-cafe/nube-designs/comic.svg') center center/contain no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
