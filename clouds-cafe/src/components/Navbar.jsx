@@ -6,7 +6,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sectionIds = ["home", "menu", "about", "contact"];
+  const sectionIds = ["home", "about", "contact"];
     const handleScroll = () => {
       let current = "home";
       for (const id of sectionIds) {
@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Links */}
         <div className="space-x-6">
           <a href="#home" className={linkClass("home")}>Home</a>
-          <a href="#menu" className={linkClass("menu")}>Menu</a>
+
           <a href="#about" className={linkClass("about")}>About</a>
           <a href="#contact" className={linkClass("contact")}>Contact</a>
         </div>
