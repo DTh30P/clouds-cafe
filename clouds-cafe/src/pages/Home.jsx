@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* Contact Section (anchor target) */}
       <section id="contact" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-        <div className="bg-white rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10">
+  <div className="rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10" style={{ background: '#fffff0' }}>
           <h2 className="text-5xl font-extrabold mb-2 tracking-tight" style={{ color: '#ffb7ce' }}>Contact</h2>
           <p className="text-lg mb-6" style={{ color: '#89cff0' }}>Let's connect! Reach out to us on social or by phone.</p>
           <div className="flex flex-col md:flex-row gap-8 w-full justify-center items-center">
