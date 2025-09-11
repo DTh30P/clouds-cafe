@@ -5,8 +5,9 @@ import welcomeSVG from "../assets/welcomeSVG";
 export default function Home() {
   return (
     <div className="pt-20 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
-      {/* Welcome SVG */}
-      <div className="flex justify-center items-center w-full mt-8 mb-4">
+      {/* Welcome SVG with Cloud Icon above */}
+      <div className="flex flex-col justify-center items-center w-full mt-8 mb-4">
+        <Cloud className="w-16 h-16 mb-2" style={{ color: '#89cff0' }} />
         <img
           src={welcomeSVG}
           alt="Hello Welcome"
@@ -45,7 +46,7 @@ export default function Home() {
   href="https://www.instagr.am/nubeworldwide"
   target="_blank"
   rel="noopener noreferrer"
-  className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 border-2 border-pink-200 shadow hover:bg-pink-50 transition font-bold text-lg w-full md:w-auto justify-center"
+  className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-pink-50 transition font-bold text-lg w-full md:w-auto justify-center"
   style={{ color: '#ffb7ce' }} // baby pink
 >
   <img src="kawaii-icons/instagram.svg" alt="Instagram" className="w-7 h-7" style={{ filter: 'invert(77%) sepia(13%) saturate(7492%) hue-rotate(295deg) brightness(104%) contrast(101%)' }} />
