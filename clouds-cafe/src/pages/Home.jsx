@@ -6,10 +6,6 @@ export default function Home() {
   return (
     <div className="pt-20 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
       {/* Hero */}
-      <section id="home" className="py-20 max-w-4xl mx-auto mb-12 px-4">
-        <h2 className="text-5xl font-extrabold mb-2 tracking-tight" style={{ color: '#ffb7ce' }}>Welcome to NUBE!</h2>
-        <p className="mt-4 text-lg font-medium" style={{ color: '#89cff0' }}>Where clouds turn into creations. <span className='inline-block align-middle'><Coffee className='inline w-6 h-6' style={{ color: '#89cff0' }} /></span></p>
-      </section>
 
       {/* About Section (anchor target) */}
       <section id="about" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">

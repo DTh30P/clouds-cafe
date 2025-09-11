@@ -5,7 +5,7 @@ export default function Header() {
   <header className="fixed top-0 left-0 w-full z-50" style={{ background: '#FFFFF0' }}>
       <div className="flex flex-col items-center w-full">
         <div className="w-full flex justify-center items-center py-4">
-          <div className="rounded-full p-3 bg-white">
+          <div className="rounded-full p-3" style={{ background: '#FFFFF0' }}>
             <img
               src="nube-designs/nube-logo.svg"
               alt="nube Café logo"
