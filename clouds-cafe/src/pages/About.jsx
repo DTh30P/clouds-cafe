@@ -1,4 +1,6 @@
 import { Cloud, Cake, Heart } from "lucide-react";
+// ...existing code...
+import welcomeSVG from "../assets/welcomeSVG";
 
 export default function About() {
   return (
@@ -10,29 +12,28 @@ export default function About() {
         <div className="absolute bottom-10 left-1/2 w-48 h-20 bg-purple-100 rounded-full opacity-40 blur-2xl animate-cloud float-cloud3" />
       </div>
 
-      <h2 className="text-4xl font-extrabold text-pink-500 mb-4 drop-shadow-kawaii flex items-center justify-center gap-2">
-        <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow-md" />
+      <h2 className="text-4xl font-extrabold text-pink-500 mb-4 drop-shadow-kawaii text-center flex flex-col items-center gap-2">
+        <Cloud className="w-8 h-8 text-blue-300 bg-blue-100 rounded-full p-1 shadow-md mb-2" />
         About NUBE
       </h2>
-      <p className="text-lg text-blue-500 mb-8 flex items-center justify-center gap-2">
-        Where every sip feels like floating
-        <Cloud className="inline w-6 h-6 text-blue-200 align-middle" />
+      <p className="text-lg text-blue-500 mb-8 text-center flex flex-col items-center gap-2">
+        <span>Where every sip feels like floating <Cloud className="inline w-6 h-6 text-blue-200 align-middle" /></span>
       </p>
 
-      <div className="bg-white/80 rounded-2xl shadow-lg p-6 mb-8 mx-auto max-w-xl">
+  <div className="bg-white/80 rounded-2xl shadow-lg p-6 mb-8 mx-auto max-w-xl text-center">
         <p className="text-pink-400 text-xl font-semibold mb-2 flex items-center gap-2"><Cake className="w-6 h-6 text-pink-300 inline" />Our Story</p>
   <p className="text-blue-400 mb-4">nube Café was born from a love for cozy vibes, pastel dreams, and kawaii treats. We wanted to create a magical space where everyone can relax, connect, and enjoy whimsical food and drinks that spark joy.</p>
         <p className="text-pink-400 text-xl font-semibold mb-2 flex items-center gap-2"><Heart className="w-6 h-6 text-pink-300 inline" />Our Mission</p>
         <p className="text-blue-400">To make every day a little brighter with fluffy cakes, dreamy drinks, and a sprinkle of cuteness. We believe in kindness, creativity, and making memories—one cloud at a time.</p>
       </div>
 
-      <div className="flex justify-center gap-6 mb-8">
+  <div className="flex justify-center gap-6 mb-8 text-center">
         <Cloud className="w-12 h-12 text-blue-200 animate-bounce-slow" />
         <Cake className="w-12 h-12 text-pink-200 animate-bounce-slow2" />
         <Heart className="w-12 h-12 text-pink-300 animate-bounce-slow3" />
       </div>
 
-      <div className="text-blue-300 text-sm mt-6 flex items-center justify-center gap-2">
+  <div className="text-blue-300 text-sm mt-6 flex items-center justify-center gap-2 text-center">
         Made with <Cloud className="inline w-5 h-5 text-blue-200 align-middle" /> & <Heart className="inline w-5 h-5 text-pink-300 align-middle" /> by the nube Café team.<br />
         <span className="italic">Come float with us!</span>
       </div>

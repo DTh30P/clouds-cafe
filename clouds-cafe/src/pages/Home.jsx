@@ -16,13 +16,14 @@ export default function Home() {
           style={{ display: 'block' }}
         />
       </div>
+      
       {/* Hero */}
 
       {/* About Section (anchor target) */}
       <section id="about" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-        <div className="bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center gap-8 p-10 md:p-16 max-w-4xl mx-auto">
-          <Cloud className="w-20 h-20 animate-bounce-slow mb-6 md:mb-0 md:mr-8" style={{ color: '#89CFF0' }} />
-          <div className="text-center md:text-left">
+        <div className="w-full mt-8 mb-4 text-center flex flex-col items-center">
+          {/* <Cloud className="w-20 h-20 animate-bounce-slow mb-6 md:mb-0 md:mr-8" style={{ color: '#89CFF0' }} /> */}
+          <div className="w-full max-w-2xl text-center">
             {/*<h2 className="text-4xl font-extrabold mb-4 tracking-tight" style={{ color: '#ffb7ce' }}>About NUBE</h2>*/}
             <p className="text-lg font-medium mb-2" style={{ color: '#89cff0' }}>Welcome to NUBE, where clouds turn into creations.</p>
             <p className="text-lg font-medium mb-2" style={{ color: '#89cff0' }}>We craft playful drinks and desserts layered with color, flavor, and joy.</p>
