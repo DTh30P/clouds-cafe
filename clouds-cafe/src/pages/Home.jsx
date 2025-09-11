@@ -4,23 +4,23 @@ import welcomeSVG from "../assets/welcomeSVG";
 
 export default function Home() {
   return (
-    <div className="pt-20 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
+    <div className="pt-16 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
       {/* Welcome SVG with Cloud Icon above */}
-      <div className="flex flex-col justify-center items-center w-full mt-8 mb-4">
-        <Cloud className="w-16 h-16 mb-2" style={{ color: '#89cff0' }} />
-        <img
-          src={welcomeSVG}
-          alt="Hello Welcome"
-          className="h-24 w-auto max-w-xs sm:h-28 sm:max-w-[320px] mx-auto"
-          style={{ display: 'block' }}
-        />
+      <div className="flex flex-col justify-center items-center w-full mt-4 mb-2">
+        <Cloud className="w-16 h-16 mb-0" style={{ color: '#89cff0', marginTop: '-2.5rem', marginBottom: '3.5rem' }} />
       </div>
       
       {/* Hero */}
 
       {/* About Section (anchor target) */}
-      <section id="about" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-        <div className="w-full mt-8 mb-4 text-center flex flex-col items-center">
+      <section id="about" className="pt-8 pb-16 px-4 max-w-4xl mx-auto">
+        <div className="w-full mt-0 mb-2 text-center flex flex-col items-center">
+          <img
+            src={welcomeSVG}
+            alt="Hello Welcome"
+            className="h-24 w-auto max-w-xs sm:h-28 sm:max-w-[320px] mx-auto mt-8 mb-8"
+            style={{ display: 'block' }}
+          />
           {/* <Cloud className="w-20 h-20 animate-bounce-slow mb-6 md:mb-0 md:mr-8" style={{ color: '#89CFF0' }} /> */}
           <div className="w-full max-w-2xl text-center">
             {/*<h2 className="text-4xl font-extrabold mb-4 tracking-tight" style={{ color: '#ffb7ce' }}>About NUBE</h2>*/}
