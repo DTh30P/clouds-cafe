@@ -12,7 +12,7 @@ export default function Home() {
         <div className="bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center gap-8 p-10 md:p-16 max-w-4xl mx-auto">
           <Cloud className="w-20 h-20 animate-bounce-slow mb-6 md:mb-0 md:mr-8" style={{ color: '#89CFF0' }} />
           <div className="text-center md:text-left">
-            <h2 className="text-4xl font-extrabold mb-4 tracking-tight" style={{ color: '#ffb7ce' }}>About NUBE</h2>
+            {/*<h2 className="text-4xl font-extrabold mb-4 tracking-tight" style={{ color: '#ffb7ce' }}>About NUBE</h2>*/}
             <p className="text-lg font-medium mb-2" style={{ color: '#89cff0' }}>Welcome to NUBE, where clouds turn into creations.</p>
             <p className="text-lg font-medium mb-2" style={{ color: '#89cff0' }}>We craft playful drinks and desserts layered with color, flavor, and joy.</p>
             <p className="text-lg font-medium mb-2" style={{ color: '#89cff0' }}>From fluffy cakes to dreamy sips, everything we make is designed to lift you to cloud nine. Sweet, creative, and unforgettable - that’s the NUBE experience.</p>
@@ -45,7 +45,7 @@ export default function Home() {
             <div className="inline-block bg-white/70 rounded-2xl px-6 py-4 shadow max-w-xs w-full" style={{ color: '#89cff0' }}>
               <div className="font-extrabold text-lg mb-1" style={{ color: '#ffb7ce' }}>nube</div>
               <div>Kirchgasse 3</div>
-              <div>8001 Zurich</div>
+              <div>8001 Zürich</div>
               <div>Switzerland</div>
             </div>
           </div>
