@@ -27,21 +27,40 @@ export default function Navbar() {
   }, []);
 
   const linkClass = (id) =>
-    `transition font-semibold px-3 py-1 rounded-lg hover:bg-pink-50 ${
-      activeSection === id
-        ? "text-pink-500 bg-pink-100 shadow font-extrabold"
-        : "text-blue-400 hover:text-pink-400"
-    }`;
+    `transition font-semibold px-3 py-1 rounded-lg ${activeSection === id ? "font-extrabold" : ""}`;
+
+  // Inline style for color
+  const linkStyle = (id) => ({
+    color: activeSection === id ? '#ffb7ce' : '#89cff0',
+    transition: 'color 0.2s',
+  });
 
   return (
   <nav className="w-full bg-transparent shadow-none border-none">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center items-center">
         {/* Links */}
         <div className="space-x-6">
-          <a href="#home" className={linkClass("home")}>Home</a>
-
-          <a href="#about" className={linkClass("about")}>About</a>
-          <a href="#contact" className={linkClass("contact")}>Contact</a>
+          <a
+            href="#home"
+            className={linkClass("home")}
+            style={linkStyle("home")}
+            onMouseOver={e => e.currentTarget.style.color = '#ffb7ce'}
+            onMouseOut={e => e.currentTarget.style.color = activeSection === 'home' ? '#ffb7ce' : '#89cff0'}
+          >Home</a>
+          <a
+            href="#about"
+            className={linkClass("about")}
+            style={linkStyle("about")}
+            onMouseOver={e => e.currentTarget.style.color = '#ffb7ce'}
+            onMouseOut={e => e.currentTarget.style.color = activeSection === 'about' ? '#ffb7ce' : '#89cff0'}
+          >About</a>
+          <a
+            href="#contact"
+            className={linkClass("contact")}
+            style={linkStyle("contact")}
+            onMouseOver={e => e.currentTarget.style.color = '#ffb7ce'}
+            onMouseOut={e => e.currentTarget.style.color = activeSection === 'contact' ? '#ffb7ce' : '#89cff0'}
+          >Contact</a>
         </div>
       </div>
     </nav>

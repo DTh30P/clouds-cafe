@@ -4,7 +4,7 @@ import { Coffee, Cake, CupSoda, Cloud } from "lucide-react";
 
 export default function Home() {
   return (
-  <div className="pt-20 text-center bg-gradient-to-br from-blue-100 via-pink-100 to-blue-50 min-h-screen">
+  <div className="pt-20 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
       {/* Hero */}
   <section id="home" className="py-20 max-w-4xl mx-auto mb-12 px-4">
   <h2 className="text-5xl font-extrabold text-pink-400 mb-2 tracking-tight">Welcome to NUBE!</h2>
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* About Section (anchor target) */}
     <section id="about" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-  <div className="bg-gradient-to-br from-blue-100 via-pink-100 to-blue-50 rounded-3xl shadow-xl flex flex-col md:flex-row items-center gap-8 p-10 md:p-16 max-w-4xl mx-auto">
+  <div className="bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center gap-8 p-10 md:p-16 max-w-4xl mx-auto">
           <Cloud className="w-20 h-20 animate-bounce-slow mb-6 md:mb-0 md:mr-8" style={{ color: '#89CFF0' }} />
           <div className="text-center md:text-left">
             <h2 className="text-4xl font-extrabold text-pink-400 mb-4 tracking-tight">About NUBE</h2>
@@ -33,7 +33,7 @@ Sweet, creative, and unforgettable - that’s the NUBE experience.</p>
 
       {/* Contact Section (anchor target) */}
     <section id="contact" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-  <div className="bg-gradient-to-br from-blue-100 via-pink-100 to-blue-50 rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10">
+  <div className="bg-white rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10">
           <h2 className="text-5xl font-extrabold mb-2 tracking-tight" style={{ color: '#89CFF0' }}>Contact</h2>
           <p className="text-lg mb-6" style={{ color: '#89CFF0' }}>Let's connect! Reach out to us on social or by phone.</p>
           <div className="flex flex-col md:flex-row gap-8 w-full justify-center items-center">
