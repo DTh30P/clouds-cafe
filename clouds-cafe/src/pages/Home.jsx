@@ -1,10 +1,21 @@
 
+
 import React from "react";
 import { Coffee, Cake, CupSoda, Cloud } from "lucide-react";
+import welcomeSVG from "../assets/welcomeSVG";
 
 export default function Home() {
   return (
     <div className="pt-20 text-center min-h-screen" style={{ background: '#FFFFF0' }}>
+      {/* Welcome SVG */}
+      <div className="flex justify-center items-center w-full mt-8 mb-4">
+        <img
+          src={welcomeSVG}
+          alt="Hello Welcome"
+          className="h-24 w-auto max-w-xs sm:h-28 sm:max-w-[320px] mx-auto"
+          style={{ display: 'block' }}
+        />
+      </div>
       {/* Hero */}
 
       {/* About Section (anchor target) */}
