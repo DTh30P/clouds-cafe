@@ -49,7 +49,7 @@ export default function Home() {
   className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-pink-50 transition font-bold text-lg w-full md:w-auto justify-center"
   style={{ color: '#ffb7ce' }} // baby pink
 >
-  <img src="kawaii-icons/instagram.svg" alt="Instagram" className="w-7 h-7" style={{ filter: 'invert(77%) sepia(13%) saturate(7492%) hue-rotate(295deg) brightness(104%) contrast(101%)' }} />
+  <img src="kawaii-icons/instagram.svg" alt="Instagram" className="w-7 h-7" />
   <span>Instagram</span>
 </a>
 <a
