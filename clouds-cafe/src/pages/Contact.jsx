@@ -47,8 +47,8 @@ export default function Contact() {
           <a href="https://instagram.com/nubecafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Instagram">
             <Instagram className="w-8 h-8 text-pink-400" />
           </a>
-          <a href="https://facebook.com/nubecafe" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Facebook">
-            <Facebook className="w-8 h-8 text-blue-400" />
+          <a href="https://facebook.com/nubeworldwide" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition" title="Facebook">
+            <Facebook className="w-8 h-8 text-blue-300" />
           </a>
         </div>
       </div>

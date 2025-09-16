@@ -33,40 +33,69 @@ export default function Home() {
       </section>
 
       {/* Contact Section (anchor target) */}
+      {/* Business Hours Section */}
+      <section id="business-hours" className="pt-12 pb-8 px-4 max-w-4xl mx-auto">
+        <div className="rounded-3xl shadow-2xl max-w-2xl mx-auto p-6 md:p-10" style={{ background: '#fffff0' }}>
+          <h2 className="text-4xl font-extrabold mb-2 tracking-tight" style={{ color: '#ffb7ce' }}>Business Hours & Operations</h2>
+          <div className="flex flex-col items-center justify-center text-lg font-semibold" style={{ color: '#89cff0' }}>
+            <span className="mb-2">MON-SAT : 10h00 - 17h00</span>
+            <a
+              href="https://music.youtube.com/watch?v=MKM90u7pf3U&si=-gNppU4IHcp3_FKN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2 font-semibold text-lg tracking-wide hover:text-pink-400 transition"
+              style={{ color: '#89cff0', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              CLOSED ON SUNDAY
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Contact Section (anchor target) */}
       <section id="contact" className="pt-24 pb-16 px-4 max-w-4xl mx-auto">
-  <div className="rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10" style={{ background: '#fffff0' }}>
+        <div className="rounded-3xl shadow-2xl max-w-4xl mx-auto p-6 md:p-10" style={{ background: '#fffff0' }}>
           <h2 className="text-5xl font-extrabold mb-2 tracking-tight" style={{ color: '#ffb7ce' }}>Contact</h2>
           <p className="text-lg mb-6" style={{ color: '#89cff0' }}>Let's connect! Reach out to us on social or by phone.</p>
           <div className="flex flex-col md:flex-row gap-8 w-full justify-center items-center">
-            <a href="tel:+15550000000" className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-blue-50 transition font-bold text-lg w-full md:w-auto justify-center" style={{ color: '#89cff0' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 text-pink-300"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h2.386c.51 0 .994.18 1.376.51l2.02 1.736a2.25 2.25 0 0 1 .782 1.72v2.02a2.25 2.25 0 0 1-.782 1.72l-2.02 1.736a2.25 2.25 0 0 1-1.376.51H4.5a2.25 2.25 0 0 1-2.25-2.25v-2.02z" /><path strokeLinecap="round" strokeLinejoin="round" d="M17.25 17.25c0 1.243-1.007 2.25-2.25 2.25h-2.386a2.25 2.25 0 0 1-1.376-.51l-2.02-1.736a2.25 2.25 0 0 1-.782-1.72v-2.02a2.25 2.25 0 0 1 .782-1.72l2.02-1.736a2.25 2.25 0 0 1 1.376-.51h2.386a2.25 2.25 0 0 1 2.25 2.25v2.02z" /></svg>
-              <span>044 012 34 56</span>
+            <a href="tel:+41792103233" className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-blue-50 transition font-bold text-lg w-full md:w-auto justify-center" style={{ color: '#89cff0' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#ffb7ce" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#ffb7ce" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h2.386c.51 0 .994.18 1.376.51l2.02 1.736a2.25 2.25 0 0 1 .782 1.72v2.02a2.25 2.25 0 0 1-.782 1.72l-2.02 1.736a2.25 2.25 0 0 1-1.376.51H4.5a2.25 2.25 0 0 1-2.25-2.25v-2.02z" /><path strokeLinecap="round" strokeLinejoin="round" d="M17.25 17.25c0 1.243-1.007 2.25-2.25 2.25h-2.386a2.25 2.25 0 0 1-1.376-.51l-2.02-1.736a2.25 2.25 0 0 1-.782-1.72v-2.02a2.25 2.25 0 0 1 .782-1.72l2.02-1.736a2.25 2.25 0 0 1 1.376-.51h2.386a2.25 2.25 0 0 1 2.25 2.25v2.02z" /></svg>
+              <span>+41 79 210 32 33</span>
             </a>
             <a
-  href="https://www.instagr.am/nubeworldwide"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-pink-50 transition font-bold text-lg w-full md:w-auto justify-center"
-  style={{ color: '#ffb7ce' }} // baby pink
->
-  <img src="kawaii-icons/instagram.svg" alt="Instagram" className="w-7 h-7" />
-  <span>Instagram</span>
-</a>
-<a
-  href="https://www.tiktok.com/@nubeworldwide"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-blue-50 transition font-bold text-lg w-full md:w-auto justify-center"
-  style={{ color: '#89cff0' }} // baby blue
->
-  <svg viewBox="0 0 32 32" fill="currentColor" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M28.5 10.5c-2.2 0-4-1.8-4-4V2h-4.2v20.2c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4c.2 0 .5 0 .7.1v-4.3c-.2 0-.5-.1-.7-.1-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8.2c1.2.7 2.6 1.2 4 1.2v-4z"
-      fill="#89cff0"
-    />
-  </svg>
-  <span>TikTok</span>
-</a>
+              href="https://www.instagr.am/nubeworldwide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-pink-50 transition font-bold text-lg w-full md:w-auto justify-center"
+              style={{ color: '#ffb7ce' }} // baby pink
+            >
+              <img src="kawaii-icons/instagram.svg" alt="Instagram" className="w-7 h-7" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.facebook.com/nubeworldwide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-blue-50 transition font-bold text-lg w-full md:w-auto justify-center"
+              style={{ color: '#89cff0' }} // baby blue
+            >
+              <img src="kawaii-icons/facebook.svg" alt="Facebook" className="w-7 h-7" style={{ color: '#89cff0' }} />
+              <span>Facebook</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@nubeworldwide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/90 shadow hover:bg-blue-50 transition font-bold text-lg w-full md:w-auto justify-center"
+              style={{ color: '#89cff0' }} // baby blue
+            >
+              <svg viewBox="0 0 32 32" fill="currentColor" className="w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28.5 10.5c-2.2 0-4-1.8-4-4V2h-4.2v20.2c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4c.2 0 .5 0 .7.1v-4.3c-.2 0-.5-.1-.7-.1-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8.2c1.2.7 2.6 1.2 4 1.2v-4z"
+                  fill="#89cff0"
+                />
+              </svg>
+              <span>TikTok</span>
+            </a>
           </div>
           {/* Address */}
           <div className="mt-8 text-center w-full flex justify-center">
